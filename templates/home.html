@@ -1,3 +1,56 @@
-<h1>
-    Hello world
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Form</title>
+</head>
+<body>
+    <h1>Data Input Form</h1>
+    <form action="{{ url_for('predict')}}" method="POST">
+        <label for="CRIM">CRIM:</label>
+        <input type="text" id="CRIM" name="CRIM" ><br><br>
+
+        <label for="ZN">ZN:</label>
+        <input type="text" id="ZN" name="ZN"><br><br>
+
+        <label for="INDUS">INDUS:</label>
+        <input type="text" id="INDUS" name="INDUS"><br><br>
+
+        <label for="CHAS">CHAS:</label>
+        <input type="text" id="CHAS" name="CHAS"><br><br>
+
+        <label for="NOX">NOX:</label>
+        <input type="text" id="NOX" name="NOX"><br><br>
+
+        <label for="RM">RM:</label>
+        <input type="text" id="RM" name="RM"><br><br>
+
+        <label for="AGE">AGE:</label>
+        <input type="text" id="AGE" name="AGE"><br><br>
+
+        <label for="DIS">DIS:</label>
+        <input type="text" id="DIS" name="DIS"><br><br>
+
+        <label for="RAD">RAD:</label>
+        <input type="text" id="RAD" name="RAD"><br><br>
+
+        <label for="TAX">TAX:</label>
+        <input type="text" id="TAX" name="TAX"><br><br>
+
+        <label for="PTRATIO">PTRATIO:</label>
+        <input type="text" id="PTRATIO" name="PTRATIO"><br><br>
+
+        <label for="B">B:</label>
+        <input type="text" id="B" name="B"><br><br>
+
+        <label for="LSTAT">LSTAT:</label>
+        <input type="text" id="LSTAT" name="LSTAT"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    
+    {{prediction_text}}
+</body>
+</html>
